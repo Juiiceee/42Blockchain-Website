@@ -27,7 +27,7 @@ export default function Home() {
 			<div className="flex-1">
 				<GlobeVisualization setLoading={handleSetLoading} />
 			</div>
-			<Mark />
+			{/* <Mark /> */}
 		</main>
 	);
 }

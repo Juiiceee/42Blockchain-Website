@@ -36,8 +36,8 @@ const Mark = () => {
 				<ReviewCard img={"scaleway.png"} />
 				<ReviewCard img={"ethfr.png"} />
 			</Marquee>
-			<div className="absolute inset-y-0 left-0 w-1/3"></div>
-			<div className="absolute inset-y-0 right-0 w-1/3"></div>
+			{/* <div className="absolute inset-y-0 left-0 w-1/3"></div>
+			<div className="absolute inset-y-0 right-0 w-1/3"></div> */}
 		</div>
 	);
 };

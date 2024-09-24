@@ -8,6 +8,8 @@ import { m } from 'framer-motion';
 const GlobeVisualization = ({ setLoading }) => {
 	const [arcsLoaded, setArcsLoaded] = useState(false);
 	const [tickerLoaded, setTickerLoaded] = useState(false);
+	const [width, setWidth] = useState(0);
+	const [height, setHeight] = useState(0);
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -151,6 +153,11 @@ const GlobeVisualization = ({ setLoading }) => {
 			behavior: 'smooth'
 		});
 	};
+
+	window.addEventListener('resize', (event) => {
+		setWidth(event.target.innerWidth);
+		setHeight(event.target.innerHeight);
+	  });
 
 	return (
 		<div className="relative" style={{ width: '100%', height: '100vh' }}>
